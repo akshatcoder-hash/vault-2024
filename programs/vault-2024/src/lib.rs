@@ -22,14 +22,6 @@ pub mod vault_2024 {
         let cpi_ctx = CpiContext::new(ctx.accounts.system_program.to_account_info(), accts);
         transfer(cpi_ctx, lamports)
     }
-
-    pub fn cancel(ctx: Context<Cancel>) -> Result<()> {
-        unimplemented!()
-    }
-
-    pub fn claim(ctx: Context<Cancel>) -> Result<()> {
-        unimplemented!()
-    }
 }
 
 #[derive(Accounts)]
